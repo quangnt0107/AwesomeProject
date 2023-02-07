@@ -1,11 +1,6 @@
 import styled, { css } from '@emotion/native'
 import { View, Text } from 'react-native'
 
-const variantValues = {
-  textColor: '',
-  backgroundColor: ''
-}
-
 const renderBackgroundColorVariant = (variant = 'primary') => {
   switch (variant) {
     case 'primary':
@@ -44,7 +39,7 @@ const renderTextStylesVariant = (variant = 'primary') => {
 };
 
 const StyledTouchableOpacity = props => {
-  return  css`
+  return css`
     background-color: ${renderBackgroundColorVariant(props.variant)};
     padding: 12px;
     border-radius: 5px;
