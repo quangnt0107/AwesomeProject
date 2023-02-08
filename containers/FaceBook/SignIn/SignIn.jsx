@@ -15,12 +15,11 @@ import {
   divider, 
   textDividerContainer,
   titleDiver, 
-  buttonLogin 
-} from './SignUp.styles';
+} from './SignIn.styles';
 
 
 
-const SignUp = () => {
+const SignIn = () => {
   // const { width, height } = Dimensions.get('screen');
 
   return (
@@ -67,4 +66,4 @@ const SignUp = () => {
   )
 }
 
-export default SignUp;
+export default SignIn;
