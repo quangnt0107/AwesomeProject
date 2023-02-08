@@ -1,18 +1,19 @@
 
 import React from 'react';
+import { View } from 'react-native';
 
 import { 
-  AppWrapper, 
-} from './App.styled';
-import { FaceBookSignUp as  ContainerFaceBookSignUp } from './containers/FaceBook';
+  wrapper, 
+} from './App.styles';
+import { FaceBookSignIn as  ContainerFaceBookSignIn } from './containers/FaceBook';
 
 
 export default function App() {
 
   return (<>
-    <AppWrapper>
-      <ContainerFaceBookSignUp />
-    </AppWrapper>
+    <View style={wrapper}>
+      <ContainerFaceBookSignIn />
+    </View>
   </>);
 }
 

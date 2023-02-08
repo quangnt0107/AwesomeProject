@@ -1,1 +1,1 @@
-export { default as FaceBookSignUp } from './SignUp';
+export { default as FaceBookSignIn } from './SignIn';
