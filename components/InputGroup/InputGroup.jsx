@@ -11,6 +11,8 @@ const InputGroup = ( props ) => {
   const {
     style = {},
     label = '',
+
+    ...otherProps
   } = props;
  
   return (
@@ -19,7 +21,9 @@ const InputGroup = ( props ) => {
         <Text>{label}</Text>
       </RenderIf>
 
-      <Input />
+      <Input 
+        {...otherProps}
+      />
       
     </View>
   )

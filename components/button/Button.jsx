@@ -10,6 +10,7 @@ const Button = (props) => {
     children = '',
     variant = 'primary', 
     style = {},
+    onPress = () => {},
   } = props;
 
   const { 
@@ -18,7 +19,7 @@ const Button = (props) => {
   } = styleVariants[variant];
 
   return (
-    <TouchableOpacity style={[styleWrapper, style]}>
+    <TouchableOpacity style={[styleWrapper, style]} onPress={onPress}>
       <Text style={styleText}>{children}</Text>
     </TouchableOpacity>
   );

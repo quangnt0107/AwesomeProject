@@ -36,3 +36,28 @@ export const buttonSubmit = css`
   padding: 18px;
   border-radius: 8px;
 `;
+
+export const switchGender = css`
+  justify-content: flex-end;
+  margin-bottom: 30px;
+`;
+
+export const modal = css`
+  background-color: white;
+`;
+
+export const modalView = css`
+  margin: 20px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 35px;
+  align-items: center;
+`;
+
+export const centeredView = css`
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 22px; */
+  /* background-color: white; */
+`;
