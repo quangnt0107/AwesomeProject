@@ -11,6 +11,7 @@ const InputGroup = ( props ) => {
   const {
     style = {},
     label = '',
+    editabe = true,
 
     ...otherProps
   } = props;
@@ -23,8 +24,9 @@ const InputGroup = ( props ) => {
 
       <Input 
         {...otherProps}
+        editable={editabe}
+        selectTextOnFocus={editabe}
       />
-      
     </View>
   )
 }
