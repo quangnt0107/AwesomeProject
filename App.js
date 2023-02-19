@@ -8,6 +8,7 @@ import {
 import KetQuaHocTap from './containers/KetQuaHocTap';
 // import { FaceBookSignIn as  ContainerFaceBookSignIn } from './containers/FaceBook';
 import ContainerSignUp from './containers/SignUp';
+import YearTransformation from './containers/YearTransformation';
 
 
 export default function App() {
@@ -16,7 +17,8 @@ export default function App() {
     <View style={wrapper}>
       {/* <ContainerFaceBookSignIn /> */}
       {/* <ContainerSignUp /> */}
-      <KetQuaHocTap />
+      {/* <KetQuaHocTap /> */}
+      <YearTransformation />
     </View>
   </>);
 }
