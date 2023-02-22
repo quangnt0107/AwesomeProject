@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { View } from 'react-native';
+import { View, Text, ScrollView, Platform } from 'react-native';
 
 import { 
   wrapper, 
@@ -13,13 +13,15 @@ import YearTransformation from './containers/YearTransformation';
 
 export default function App() {
 
+  console.log(Platform);
+
   return (<>
-    <View style={wrapper}>
+    <ScrollView style={wrapper}>
       {/* <ContainerFaceBookSignIn /> */}
       {/* <ContainerSignUp /> */}
       {/* <KetQuaHocTap /> */}
-      <YearTransformation />
-    </View>
+      {/* <YearTransformation /> */}
+    </ScrollView>
   </>);
 }
 
