@@ -13,6 +13,7 @@ import KetQuaHocTap from './containers/KetQuaHocTap';
 // import { FaceBookSignIn as  ContainerFaceBookSignIn } from './containers/FaceBook';
 import ContainerSignUp from './containers/SignUp';
 import YearTransformation from './containers/YearTransformation';
+import Flower from './screens/Flower';
 
 
 
@@ -32,6 +33,7 @@ export default function App() {
           component={HomeContainer}
         />
         <Stack.Screen name="About" component={AboutContainer} />
+        <Stack.Screen name="Flower" component={Flower} />
       </Stack.Navigator>
     </NavigationContainer>
   </>);
