@@ -1,4 +1,5 @@
 
+import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
@@ -14,6 +15,8 @@ import KetQuaHocTap from './containers/KetQuaHocTap';
 import ContainerSignUp from './containers/SignUp';
 import YearTransformation from './containers/YearTransformation';
 import Flower from './screens/Flower';
+import Root from './screens/Root';
+import Root2 from './screens/Root2';
 
 
 
@@ -27,13 +30,24 @@ export default function App() {
 
   return (<>
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen
-          name='Home'
-          component={HomeContainer}
-        />
-        <Stack.Screen name="About" component={AboutContainer} />
-        <Stack.Screen name="Flower" component={Flower} />
+      <Stack.Navigator initialRouteName="Root">
+        <Stack.Group>
+          <Stack.Screen
+            name='Home'
+            component={HomeContainer}
+            options={{ title: 'Home' }}
+          />
+          <Stack.Screen name="About">
+            {(props) => <AboutContainer {...props} data={[]} />}
+          </Stack.Screen>
+          <Stack.Screen name="Flower" component={Flower} />
+        </Stack.Group>
+        <Stack.Group>
+          <Stack.Screen name="Root" component={Root} options={{ headerShown: false }} /> 
+        </Stack.Group>
+        <Stack.Group>
+          <Stack.Screen name="Root2" component={Root2} />
+        </Stack.Group>
       </Stack.Navigator>
     </NavigationContainer>
   </>);

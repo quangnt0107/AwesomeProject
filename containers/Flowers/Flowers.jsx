@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, FlatList, ScrollView, Text } from 'react-native';
+import { Button, FlatList, View, Text } from 'react-native';
 
 import sampleData from './data.json';
 
@@ -16,7 +16,7 @@ const Flowers = (props) => {
   console.log(props);
 
   return (
-    <ScrollView style={[styles.wrapper, style]}>
+    <View style={[styles.wrapper, style]}>
       <FlatList
         data={loaihoas}
         renderItem={({ item }) =>
@@ -29,7 +29,7 @@ const Flowers = (props) => {
           />
         }
       />
-    </ScrollView>
+    </View>
   );
 };
 

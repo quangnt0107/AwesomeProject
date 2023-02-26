@@ -1,22 +1,20 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
-import * as styles from './Flower.styles';
+import * as styles from './Tab1.styles';
 
 
-const Flower = (props) => {
+const Tab1 = (props) => {
   const {
     style = '',
   } = props;
-  
-  console.log(props);
 
   return (
     <View style={[styles.wrapper, style]}>
-      <Text>Flower</Text>
+      <Text>Tab1</Text>
     </View>
   );
 };
 
-export default Flower;
+export default Tab1;
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, ScrollView, Text } from 'react-native'
+import { Button, View, Text } from 'react-native'
 import Flowers from '../Flowers';
 
 const Home = (props) => {
@@ -7,8 +7,14 @@ const Home = (props) => {
   
 
   return (
-    <ScrollView>
+    <View>
       <Text>Home container</Text>
+      <Button
+        title="Go to About Screen"
+        onPress={() =>
+          props.navigation.navigate('About', { name: 'About Screen', data: [] })
+        }
+      />
       <Button
         title="Go to Flower Screen"
         onPress={() =>
@@ -16,7 +22,7 @@ const Home = (props) => {
         }
       />
       <Flowers {...props} />
-    </ScrollView>
+    </View>
   )
 }
 
