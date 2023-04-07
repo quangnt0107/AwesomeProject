@@ -8,6 +8,8 @@ import Drawer2 from '../../containers/Drawer2';
 
 
 import * as styles from './Root.styles';
+import Home from '../../containers/Home/Home';
+import Root2 from '../Root2/Root2';
 
 
 const Drawer = createDrawerNavigator();
@@ -34,6 +36,8 @@ const Root = (props) => {
       />
 
       <Drawer.Screen name='Drawer2' component={Drawer2}/>
+      <Drawer.Screen name='Home' component={Home}/>
+      <Drawer.Screen name='Root2' component={Root2}/>
     </Drawer.Navigator>
 
   );
